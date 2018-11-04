@@ -65,7 +65,7 @@
 
 
 @media only screen and (max-width: 600px) {
-	#container-i #hey {font-size: 80px; }
+	#container-i #hey h1 {font-size: 80px; }
 	#container-l #message h1 {font-size: 48px; }
 	#container-l #message li {font-size: 20px; }
 	#container-l #lyrics {font-size:20px;}
@@ -85,9 +85,9 @@
 }
 
 footer {
-	position: absolute;
-	bottom:5px;
-	right:5px;
+	position: fixed;
+    right: 0;
+    bottom: 0;
 	width:350px;
 	background-color:white;
 	font-size:10px;
@@ -393,28 +393,10 @@ i {
 	margin: 0, auto;
 }
 
-/*TIMER*/
-#progressBar {
-	width:100%;
-}
-
-#progress {
-	background-color: white;
-	width:0%;
-	height:10px;
-}
-
 #watchTest {
 	font-size:18px;
 	color: white;
 	transition: width 2s, height 2s;
-}
-
-#footer-container {
-	display:flex;
-	align-items: center;
-	opacity: 0.8;
-
 }
 
 
@@ -459,8 +441,4 @@ i {
 
 #delete {
 	display:none;
-}
-
-.small {
-	margin-bottom:10px;
 }
