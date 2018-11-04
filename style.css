@@ -174,7 +174,8 @@ footer {
 
 #about {
 	border-top: solid 3px #0E81A2;
-	background-image: linear-gradient(to bottom, rgba(117, 200, 223,1), rgba(255, 255, 255,0), rgba(255, 255, 255,0));
+	background-color: rgba(255, 255, 255,0);
+	background-image: linear-gradient(to bottom, rgb(117, 200, 223), rgb(255, 255, 255), rgb(255, 255, 255));
 }
 
 #about s {
@@ -225,7 +226,8 @@ i {
 }
 
 #contact {
-	background-image: linear-gradient(to top, rgba(117, 200, 223,1), rgba(255, 255, 255,0), rgba(255, 255, 255,0));
+	background-color: rgba(255, 255, 255,0);
+	background-image: linear-gradient(to top, rgb(117, 200, 223), rgb(255, 255, 255), rgb(255, 255, 255));
 }
 
 #contact-content {
