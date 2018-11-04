@@ -64,18 +64,18 @@
 }
 
 
-@media only screen and (max-width: 600px) {
-	#container-i #hey h1 {font-size: 80px; }
-	#container-l #message h1 {font-size: 48px; }
-	#container-l #message li {font-size: 20px; }
-	#container-l #lyrics {font-size:20px;}
+@media only screen and (max-width: 450px) {
+	#container-i #hey { font-size: 70px; }
+	#container-l #message h1 {font-size: 42px; }
+	#container-l #message li {font-size: 14px; }
+	#container-l #game-header {font-size: 24px}
+	#container-l #lyrics {font-size:16px;}
 	#container-b {flex-direction: column; }
 	#blog-c {order: 0;}
 	#demoBlog {order: 1;}
 	#contact #contact-content h1 {font-size:46px;}
-	#intro li { font-size: 18px; }
 	#message { height: 100%; }
-	.border-c { border: 4px dashed red; }
+	#menu {display:none;}
 	#menu a { font-size:12px; padding-left:15px;}
 	#blog-c { display:flex; flex-direction: row; overflow: scroll;}
 	.i-container .border-c {padding: 5px; }
@@ -83,6 +83,27 @@
 	#experience .i-content li {font-size:20px;}
 	.i-container .i-content {width:85%;}
 }
+
+
+@media only screen and (width: 840px) {
+	#container-i #hey { font-size: 100px; }
+	#container-l #message h1 {font-size: 68px; }
+	#container-l #message li {font-size: 30px; }
+	#container-l #game-header {font-size: 40px}
+	#container-l #lyrics {font-size:28px;}
+	#container-b {flex-direction: column; }
+	#blog-c {order: 0;}
+	#demoBlog {order: 1;}
+	#contact #contact-content h1 {font-size:46px;}
+	#message { height: 100%; }
+	#menu a { font-size:12px; padding-left:15px;}
+	#blog-c { display:flex; flex-direction: row; overflow: scroll;}
+	.i-container .border-c {padding: 5px; }
+	#experience .i-content h2 {font-size:34px;}
+	#experience .i-content li {font-size:20px;}
+	.i-container .i-content {width:85%;}
+}
+
 
 footer {
 	position: fixed;
