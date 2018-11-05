@@ -27,7 +27,7 @@
 #container-i {
 	background-image: url("home.jpg");
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: center center;
 	background-attachment: fixed;
 	background-size:cover;
 	height:92vh;
