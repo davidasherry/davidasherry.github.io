@@ -24,26 +24,13 @@
 	box-shadow: 0 0 8px white;
 }
 
-#home {
-	background-image: url("home.jpg");
-	background-size: cover;
-	height:92vh;
-	display: flex;
-  	align-items: center;
-  	justify-content: center;
-}
-
 #container-i {
 	background-image: url("home.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-attachment: fixed;
 	background-size: cover;
 	height:92vh;
 	display: flex;
   	align-items: center;
   	justify-content: center;
-  	flex-direction: column;
 }
 
 #container-l {
