@@ -61,7 +61,7 @@
 
 
 @media only screen and (max-width: 450px) {
-	#hey { font-size: 70px; }
+	#home #hey { font-size: 70px; }
 	#container-l #message h1 {font-size: 42px; }
 	#container-l #message li {font-size: 14px; }
 	#container-l #game-header {font-size: 24px}
@@ -82,7 +82,7 @@
 
 
 @media only screen and (width: 840px) {
-	#hey { font-size: 100px; }
+	#home #hey { font-size: 100px; }
 	#container-l #message h1 {font-size: 68px; }
 	#container-l #message li {font-size: 30px; }
 	#container-l #game-header {font-size: 40px}
