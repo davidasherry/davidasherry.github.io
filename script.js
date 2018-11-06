@@ -82,6 +82,7 @@ function skipped(){
 	let i = Math.floor(Math.random() * songs.length);
 	demo = document.querySelector("#demoLyric").innerHTML = "Skipped!";
 	lyrics = document.querySelector("#lyrics").innerHTML = songs[i].lyric;
+	answer = songs[i].answer;
 }
 
 
