@@ -1,7 +1,10 @@
 // LYRICS
 var songs = [
-{ lyric: "When I get older I will be stronger,<br> they'll call me freedom just like a waving", answer: "flag"}, 
+{ lyric: "When I get older I will be stronger,<br> they'll call me freedom just like a waving", answer: "flag"},
+{ lyric: "We all live in a yellow submarine,<br> a yellow submarine,<br> a yellow ", answer: "submarine"},
+{ lyric: "Carry on my Wayward son,<br> they'll be peace when you are done,<br> lay your weary head to,<br> don't you cry no", answer: "more"}, 
 { lyric: "If I could walk 500 miles,<br> than I would walk 500", answer: "more"},
+{ lyric: "Hey I just met you, and this is crazy<br> but here's my number, call me ", answer: "maybe"},
 { lyric: "Just a city boy,<br> born and raised in South Detroit,<br> he took the midnight train going", answer: "anywhere"},
 { lyric: "It's the eye of the tiger,<br> it's the thrill of the fight,<br> Risin' up to the challenge of our", answer: "rivals"},
 { lyric: "Sweet home Alabama<br> Where the skies are so blue<br> Sweet home Alabama<br> Lord, I'm coming home to", answer: "you"},
@@ -11,7 +14,6 @@ var songs = [
 { lyric: "Oh yeah baby, like a fool I went and stayed too long<br>Now I'm wondering if your love's still strong<br>Oo baby, here I am, signed, sealed delivered, I'm ", answer: "yours"},
 { lyric: "His palms are sweaty, knees weak, arms are heavy<br> There's vomit on his sweater already, mom's", answer: "spaghetti"}
 ];
-
 
 
 
@@ -34,6 +36,7 @@ var r = 0;
 var round = document.querySelector("#round");
 var sec = 30;
 document.querySelector("#time").innerHTML =  sec;
+var skip = document.querySelector("#skip");
 
 //START
 function startGame() {
@@ -53,8 +56,9 @@ function startGame() {
 
 //BASE
 function myFunction() {
-	var guess = document.querySelector("#input").value;
-	var i = Math.floor(Math.random() * songs.length);
+	var form = document.querySelector("#input").value;
+	var guess = form.toLowerCase();
+	let i = Math.floor(Math.random() * songs.length);
 
 	if (guess == answer) {
 		demo = document.querySelector("#demoLyric").innerHTML = "That is Correct!";
@@ -62,7 +66,6 @@ function myFunction() {
     	totalScore.innerHTML = score;
     	lyrics = document.querySelector("#lyrics").innerHTML = songs[i].lyric;
     	answer = songs[i].answer;
-
 	} else if (guess.length == 0){
 		demo = document.querySelector("#demoLyric").innerHTML = "Please Enter Something...";
 	} else  {
@@ -75,6 +78,11 @@ function myFunction() {
 	document.getElementById("formLyric").reset();
 }
 
+function skipped(){
+	let i = Math.floor(Math.random() * songs.length);
+	demo = document.querySelector("#demoLyric").innerHTML = "Skipped!";
+	lyrics = document.querySelector("#lyrics").innerHTML = songs[i].lyric;
+}
 
 
 //GAMEOVER
@@ -145,7 +153,7 @@ function work(x,y){
 }
 
 
-
+skip.addEventListener("click", skipped);
 start.addEventListener("click", startGame);
 input.addEventListener("keypress", pressEnter);
 button.addEventListener("click", myFunction);

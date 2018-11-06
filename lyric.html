@@ -38,20 +38,21 @@
 		<div id="container">
 			<form id="formLyric" onsubmit="return false">
 				<div id="game-header" class="game-style">Finish the Lyrics!</div> 
-				<p class="game-style">Score: <span id="totalScore">0</span></p>
-				<p class="game-style">Mistakes: <span id="attempts">0</span> <span>Round: <span id="round">0</span></span></p>
-				<p class="game-style">High Score: <span id="previous">0</span></p>
+				<p class="game-style">Score: <span id="totalScore">0</span> Mistakes: <span id="attempts">0</span></p>
+				<p class="game-style"><span>High Score: <span id="previous">0</span> Round: <span id="round">0</span></p>
+
+				<div id="watchTest"></div>
+
 				<div id="lyricContainer">
 					<div id="lyrics"></div>
 				</div>
-				<input id="input" type="text" name="input" autocomplete="off" placeholder="...">
-				<button type="button" class="button" id="submit">Enter</button>
+				<input autocapitalize="none" id="input" type="text" name="input" autocomplete="off" placeholder="...">
+				<button type="button" class="button btn-warning" id="skip">Skip</button>
+				<button type="button" class="button btn-success" id="submit">Enter</button>
 			</form>
 
-			<p id="demoLyric"></p><br>
+			<p id="demoLyric"></p>
 
-			<div id="watchTest"></div>
-				
 		</div>
 	</div>
 	<div id="result"></div>
